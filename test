@@ -1,0 +1,26 @@
+
+let html = '<div class="container-cards" id="container-cards">';
+    images.map(image=>{
+        i=Math.floor(Math.random() * 8);
+        if(indiceRandom.length!=0){
+            for(let j=0;j<indiceRandom.length;j++){
+                if(i==indiceRandom[j]){
+                    occur_i++;
+                }
+            }
+            if(i>2){
+                i=Math.floor(Math.random() * 8);
+            }else{
+                console.log(i);
+                html+=`<div class="card" id="${k}" onclick="openCard(this)"><img id="img${k}" src="${images[i]}" alt=""></div>`; 
+            }
+        }else{
+            indiceRandom.push(i);
+        }
+        k++;
+    });
+    html+=`</div>`;
+
+    document.getElementById("container").innerHTML=html;
+  
+    

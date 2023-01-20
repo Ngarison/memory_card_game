@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="audios/Victory - Sound Effect.mp3" type="audio/mp3">
+        <source src="audios/You Win Male Voice - Sound Effect(HD).mp3" type="audio/mp3">
+      </audio>
+      <audio id="myAudio2">
+        <source src="audios/Button click sound  sound effect.mp3" type="audio/mp3">
+      </audio>
+      <audio id="myAudio3">
+        <source src="audios/Correct.mp3" type="audio/mp3">
+      </audio>
+      <audio id="myAudio4">
+        <source src="audios/error.mp3" type="audio/mp3">
+      </audio>
+      <audio id="myAudio1">
+        <source src="audios/Loser Sound Effects.mp3" type="audio/mp3">
+      </audio>
+    <div id="overlay1" onclick="off()"><h1 class="winner">You win!</h1></div>
+    <div id="overlay2" onclick="off()"><h1 class="loser">You are a loser!</h1></div>
+    <div class="title-div">
+        <div class="score-div">
+            <label for="">Score: <span id="score">0</span></label>
+        </div>
+        <h1 class="title">Memory card Game</h1>
+        <div class="sablier-div">
+            <img class="sablier" src="images/Sablier.png" alt="">
+        </div>
+        <div class="timer-div">
+          <label for="" class="timer" id="timer">00</label>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <!-- ajout des éléments par js -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
